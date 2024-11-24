@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Anthony's Portfolio.</title>
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="assets/css/styles-About.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        -->
+        <!--<link href="https://fonts.googleapis.com/css?family=Revalia|Wallpoet" rel="stylesheet">
+        -->
+    </head>
+
+    <body>
+        
+        <!-- <div class="Page Front"> -->
+            <section class="section ClassNav sticky" id="NavHeader">
+                <div class="container">
+                    <nav>
+                        <img src="assets/images/GHub-Light.png" class="logo">
+
+
+                        <ul>
+                            <li class="menu icon" onclick="hamBurger()" id="HamButton">
+                                <!-- <div class="menu icon" onclick="hamBurger()"> -->
+                                    <div class="bar" id="bar1"></div>
+                                    <div class="bar" id="bar2"></div>
+                                    <div class="bar" id="bar3"></div>
+                                <!-- </div> -->
+                            </li>
+                            
+                            <li>
+                                <a class="icon" href="index.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M19.07 4.93C17.22 3 14.66 1.96 12 2c-2.66-.04-5.21 1-7.06 2.93C3 6.78 1.96 9.34 2 12c-.04 2.66 1 5.21 2.93 7.06C6.78 21 9.34 22.04 12 22c2.66.04 5.21-1 7.06-2.93C21 17.22 22.04 14.66 22 12c.04-2.66-1-5.22-2.93-7.07M17 12v6h-3.5v-5h-3v5H7v-6H5l7-7l7.5 7z" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href='index.html' target="_self" title="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="about.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <path fill="currentColor" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText active-link" href="about.html" target="_self" title="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="projects.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-1.11.89-2 2-2h4V4c0-1.11.89-2 2-2m4 4V4h-4v2z" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href="projects.html" target="_self" title="https://github.com/Antsstar">Projects</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="services.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="m14.17 13.71l1.4-2.42c.09-.15.05-.34-.08-.45l-1.48-1.16c.03-.22.05-.45.05-.68s-.02-.46-.05-.69l1.48-1.16c.13-.11.17-.3.08-.45l-1.4-2.42c-.09-.15-.27-.21-.43-.15l-1.74.7c-.36-.28-.75-.51-1.18-.69l-.26-1.85a.364.364 0 0 0-.35-.29h-2.8c-.17 0-.32.13-.35.3L6.8 4.15c-.42.18-.82.41-1.18.69l-1.74-.7c-.16-.06-.34 0-.43.15l-1.4 2.42c-.09.15-.05.34.08.45l1.48 1.16c-.03.22-.05.45-.05.68s.02.46.05.69l-1.48 1.16c-.13.11-.17.3-.08.45l1.4 2.42c.09.15.27.21.43.15l1.74-.7c.36.28.75.51 1.18.69l.26 1.85c.03.16.18.29.35.29h2.8c.17 0 .32-.13.35-.3l.26-1.85c.42-.18.82-.41 1.18-.69l1.74.7c.16.06.34 0 .43-.15M8.81 11c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m13.11 7.67l-.96-.74c.02-.14.04-.29.04-.44s-.01-.3-.04-.44l.95-.74c.08-.07.11-.19.05-.29l-.9-1.55c-.05-.1-.17-.13-.28-.1l-1.11.45c-.23-.18-.48-.33-.76-.44l-.17-1.18a.216.216 0 0 0-.21-.2h-1.79c-.11 0-.21.08-.22.19l-.17 1.18c-.27.12-.53.26-.76.44l-1.11-.45a.23.23 0 0 0-.28.1l-.9 1.55c-.05.1-.04.22.05.29l.95.74a3.2 3.2 0 0 0 0 .88l-.95.74c-.08.07-.11.19-.05.29l.9 1.55c.05.1.17.13.28.1l1.11-.45c.23.18.48.33.76.44l.17 1.18c.02.11.11.19.22.19h1.79c.11 0 .21-.08.22-.19l.17-1.18c.27-.12.53-.26.75-.44l1.12.45c.1.04.22 0 .28-.1l.9-1.55c.06-.09.03-.21-.05-.28m-4.29.16a1.35 1.35 0 1 1 .001-2.701a1.35 1.35 0 0 1-.001 2.701" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href="services.html" target="_self" title="https://github.com/Antsstar">Services</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        <!-- -------------------------------------------- TopOffset -------------------------------------------- -->
+            <section class="section TopOffset" id="TopOffset">
+                <hr>
+            </section>
+
+        <!-- -------------------------------------------- SideBar -------------------------------------------- -->
+            <section class="section SideBar" id="SideBar">
+                <div class="container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a class="icon" href="index.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M19.07 4.93C17.22 3 14.66 1.96 12 2c-2.66-.04-5.21 1-7.06 2.93C3 6.78 1.96 9.34 2 12c-.04 2.66 1 5.21 2.93 7.06C6.78 21 9.34 22.04 12 22c2.66.04 5.21-1 7.06-2.93C21 17.22 22.04 14.66 22 12c.04-2.66-1-5.22-2.93-7.07M17 12v6h-3.5v-5h-3v5H7v-6H5l7-7l7.5 7z" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href='index.html' target="_self" title="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="about.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <path fill="currentColor" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText active-link" href="about.html" target="_self" title="about.html">About</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="projects.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-1.11.89-2 2-2h4V4c0-1.11.89-2 2-2m4 4V4h-4v2z" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href="projects.html" target="_self" title="https://github.com/Antsstar">Projects</a>
+                            </li>
+
+                            <li>
+                                <a class="icon" href="services.html" target="_self">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="m14.17 13.71l1.4-2.42c.09-.15.05-.34-.08-.45l-1.48-1.16c.03-.22.05-.45.05-.68s-.02-.46-.05-.69l1.48-1.16c.13-.11.17-.3.08-.45l-1.4-2.42c-.09-.15-.27-.21-.43-.15l-1.74.7c-.36-.28-.75-.51-1.18-.69l-.26-1.85a.364.364 0 0 0-.35-.29h-2.8c-.17 0-.32.13-.35.3L6.8 4.15c-.42.18-.82.41-1.18.69l-1.74-.7c-.16-.06-.34 0-.43.15l-1.4 2.42c-.09.15-.05.34.08.45l1.48 1.16c-.03.22-.05.45-.05.68s.02.46.05.69l-1.48 1.16c-.13.11-.17.3-.08.45l1.4 2.42c.09.15.27.21.43.15l1.74-.7c.36.28.75.51 1.18.69l.26 1.85c.03.16.18.29.35.29h2.8c.17 0 .32-.13.35-.3l.26-1.85c.42-.18.82-.41 1.18-.69l1.74.7c.16.06.34 0 .43-.15M8.81 11c-1.1 0-2-.9-2-2s.9-2 2-2s2 .9 2 2s-.9 2-2 2m13.11 7.67l-.96-.74c.02-.14.04-.29.04-.44s-.01-.3-.04-.44l.95-.74c.08-.07.11-.19.05-.29l-.9-1.55c-.05-.1-.17-.13-.28-.1l-1.11.45c-.23-.18-.48-.33-.76-.44l-.17-1.18a.216.216 0 0 0-.21-.2h-1.79c-.11 0-.21.08-.22.19l-.17 1.18c-.27.12-.53.26-.76.44l-1.11-.45a.23.23 0 0 0-.28.1l-.9 1.55c-.05.1-.04.22.05.29l.95.74a3.2 3.2 0 0 0 0 .88l-.95.74c-.08.07-.11.19-.05.29l.9 1.55c.05.1.17.13.28.1l1.11-.45c.23.18.48.33.76.44l.17 1.18c.02.11.11.19.22.19h1.79c.11 0 .21-.08.22-.19l.17-1.18c.27-.12.53-.26.75-.44l1.12.45c.1.04.22 0 .28-.1l.9-1.55c.06-.09.03-.21-.05-.28m-4.29.16a1.35 1.35 0 1 1 .001-2.701a1.35 1.35 0 0 1-.001 2.701" />
+                                    </svg>
+                                </a>
+                                <a class="LinkText" href="services.html" target="_self" title="https://github.com/Antsstar">Services</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+        <div class="Page">
+        <!-- -------------------------------------------- Projects -------------------------------------------- -->
+        <!-- </div>
+        
+        <div class="Page"> -->
+            <section class="section About" id="About">
+                <div class="container">
+                    <h1 class="sub-title">About Me</h1>
+                    <!-- <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sit modi quis eveniet.
+                        Pariatur dicta alias, incidunt ea enim quaerat sapiente, minus accusamus ullam impedit deserunt. Velit, qui illum! Ab!
+                    </p> -->
+                    <p>Hi, I'm Anthony. An Aspiring Software Dev/Engineer and here is a little more about me.</p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="LinkText tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="LinkText tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="LinkText tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                </div>
+
+            </section>
+
+        <!-- -------------------------------------------- About -------------------------------------------- -->
+
+            <section class="section Options" id="Options">
+                <div class="container" id="parent">
+                    <!-- <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> -->
+                    <div class="row">
+                        <div class="about-col-1">
+                            <div class="container">
+                                <div class="tab-contents active-tab" id="skills-pic">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                        <g fill="currentColor">
+                                            <path d="M5 8a2 2 0 1 0 0-4a2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="tab-contents" id="experience-pic">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                        <path fill="currentColor" fill-rule="evenodd" d="M21.058 7.52c-2.698.984-4.814 3.285-5.659 6.174C13.898 14.464 13 15.44 13 16.5c0 1.198 1.144 2.287 3.01 3.093Q16 19.795 16 20a8 8 0 1 0 15.99-.407C33.856 18.787 35 17.698 35 16.5c0-1.061-.898-2.036-2.4-2.806c-.844-2.89-2.96-5.19-5.658-6.175A2 2 0 0 0 25 6h-2a2 2 0 0 0-1.942 1.52M22 12a1 1 0 0 0 1-1V8h2v3a1 1 0 1 0 2 0V9.722c1.587.81 2.868 2.253 3.525 4.056l-.008.035a1.4 1.4 0 0 1-.157.107c-.286.17-.758.356-1.412.526c-1.293.337-3.081.554-4.948.554s-3.655-.217-4.948-.554c-.654-.17-1.126-.356-1.412-.526a1.4 1.4 0 0 1-.157-.107l-.002-.009l-.006-.026c.657-1.803 1.938-3.247 3.525-4.056V11a1 1 0 0 0 1 1m-5.656 3.458l-.033.016c-.607.311-.974.607-1.167.828a.8.8 0 0 0-.138.198c.021.048.082.152.249.314c.313.303.871.668 1.724 1.017C18.675 18.525 21.157 19 24 19s5.325-.475 7.02-1.17c.854-.348 1.412-.713 1.725-1.016c.167-.162.228-.266.249-.314a.8.8 0 0 0-.138-.198c-.193-.221-.56-.517-1.167-.828l-.033-.016a3 3 0 0 1-.272.18c-.517.308-1.195.552-1.933.744C27.961 16.77 26 17 24 17s-3.961-.23-5.451-.618c-.738-.192-1.416-.436-1.933-.745a3 3 0 0 1-.272-.18m16.66 1.07L33 16.52zm0-.058q-.002 0-.003.01l.002-.008zm-18.006.006l-.001-.006l.002.01zm0 .048v-.005v.003l-.001.006zm14.996 3.75C28.27 20.734 26.21 21 24 21s-4.27-.267-5.994-.726a6 6 0 0 0 11.988 0m4.691 6.32a1 1 0 0 0-1.274-1.25A6.502 6.502 0 0 0 32 36.977V41a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-4.022a6.502 6.502 0 0 0-1.411-11.635a1 1 0 0 0-1.274 1.251l.022.082l.557 2.6a1.425 1.425 0 1 1-2.788 0l.557-2.6zm4.164 2.263l-.1-.472a4.5 4.5 0 0 1-1.205 7.125a1 1 0 0 0-.545.93l.001.06V40h-3v-3.508l.001-.052a1 1 0 0 0-.544-.93a4.5 4.5 0 0 1-1.205-7.125l-.101.472a3.425 3.425 0 1 0 6.698 0m-20.496-.249L23 32.222v3.675c.205.052.525.103 1 .103s.795-.05 1-.103V32l2-1.5V42H6v-6c0-3.661 6.52-6.273 12.353-7.392m-3.878 7.66L21 35.181V40h-8v-7.82a31 31 0 0 1 3.35-1.07zM8 40h3v-6.921l-.074.039c-1.064.564-1.842 1.139-2.332 1.68C8.114 35.33 8 35.723 8 36zm16-2q-.566-.002-1-.067V40h2v-2.067q-.434.065-1 .067m-3.05-4.839l-2.508-1.95l-.917 2.521z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <div class="tab-contents" id="education-pic">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path fill="currentColor" d="M26 30h-2v-3a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v3H6v-3a7.01 7.01 0 0 1 7-7h6a7.01 7.01 0 0 1 7 7zM5 6a1 1 0 0 0-1 1v9h2V7a1 1 0 0 0-1-1" />
+                                        <path fill="currentColor" d="M4 2v2h5v7a7 7 0 0 0 14 0V4h5V2Zm7 2h10v3H11Zm5 12a5 5 0 0 1-5-5V9h10v2a5 5 0 0 1-5 5" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-col-2">
+                            <!-- <h1 class="sub-title">About Me</h1>
+                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt sit modi quis eveniet.
+                                 Pariatur dicta alias, incidunt ea enim quaerat sapiente, minus accusamus ullam impedit deserunt. Velit, qui illum! Ab!
+                            </p>
+     -->
+                            <!-- Tab options -->
+                            <!-- <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div> -->
+    
+                            <!-- Option texts -->
+
+                            <div class="container">
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>Web Development</span><br>Experience using HTML, CSS and JavaScript to design webpages.</li>
+                                        <li><span>High Performance Computing</span><br>Experience using Parallel Processing techniques in Python and C++ to optimise run times</li>
+                                        <li><span>Control Systems & Controller Dynamics</span><br>Experience using MATLAB & Simulink in designing in the loop controllers.</li>
+                                        <li><span>Machine Learning</span><br>Experience using Tensorflow and PyTorch in generating Machine Learning models.</li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span>07/17-08/17</span><br>Web Developer Intern at Expedia.</li>
+                                        <li><span>02/19-03/19</span><br>Thermal Engineer and budget manager Intern at Crofton Design.</li>
+                                        <li><span>09/21-10/21 & 09/23-06/24</span><br>University Halls Senior and Event Organiser.</li>
+                                        <li><span>07/22-08/22</span><br>eCommerce Software Dev and Team Coordinator Intern at Ford Credit.</li>
+                                        <li><span>07/23-08/23</span><br>Technology Analyst Intern at Ofcom.</li>
+                                    </ul>
+                                </div>
+                            
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span>St Aloysius RC College, London - 2018</span><br>GCSEs: Four Grade 9's, Grade A*, Grade 8, Grade 7, and Four Grade 6's.</li>
+                                        <li><span>Mossbourne Community Academy, London - 2020 </span><br>A-Levels: Three Grade A*s and One A.</li>
+                                        <li><span>Imperial College University, London - Current</span><br>MEng: Currently a high 2.1 degree average.</li>
+                                    </ul>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- -------------------------------------------- Services -------------------------------------------- -->
+        </div>
+
+        <div class="Page Last">
+            <section class="section Hobbies" id="Hobbies">
+                <div class="container">
+                    <h1 class="sub-title">Hobbies & Interests</h1>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4.5 18a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m14 0a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m1.5-1c0-1.37.09-3.19-.5-4.05c-.95-2.05-3.68-2.39-5.59-2.9C13 10 12 9 11.82 8H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V6H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V2H3v15zm-8.5 1a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                        <circle cx="24" cy="17.973" r="2.904" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.317 41.778L24 31.108l4.683 10.67M24 31.108v-6.75m8.581-8.893L24 24.36l-8.581-8.894m-2.574-1.91h22.368M36.71 8.7v9.713M11.423 8.7v9.713M38.198 8.7v9.713m1.487-7.538v5.362M9.936 8.7v9.713M8.45 10.875v5.362" />
+                    </svg> -->
+
+                    <div class="carousel">
+                        <div class="carousel-panel">
+                            <div class="carousel-track">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M4.5 18a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m14 0a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m1.5-1c0-1.37.09-3.19-.5-4.05c-.95-2.05-3.68-2.39-5.59-2.9C13 10 12 9 11.82 8H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V6H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V2H3v15zm-8.5 1a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="17.973" r="2.904" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.317 41.778L24 31.108l4.683 10.67M24 31.108v-6.75m8.581-8.893L24 24.36l-8.581-8.894m-2.574-1.91h22.368M36.71 8.7v9.713M11.423 8.7v9.713M38.198 8.7v9.713m1.487-7.538v5.362M9.936 8.7v9.713M8.45 10.875v5.362" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path fill="currentColor" d="M16 3C8.855 3 3 8.855 3 16s5.855 13 13 13s13-5.855 13-13S23.145 3 16 3m0 2c2.355 0 4.55.758 6.344 2.031a19.3 19.3 0 0 0-5.938-.5c-1.304.094-2.43.29-3.281.5c-.273.067-.45.125-.656.188a9.4 9.4 0 0 1-.156-1.563A10.9 10.9 0 0 1 16 5m-5.625 1.594a14 14 0 0 0 .344 1.906c-.004.2.05.395.156.563a16.6 16.6 0 0 0 1.625 3.843q.03.047.063.094a18.2 18.2 0 0 0 2.343 3.156c-.254.864-.566 1.66-.906 2.375c-.578-.527-1.309-1.304-2.094-2.437c-1.328-1.914-2.594-4.672-2.656-8.375a1 1 0 0 0-.063-.344c.368-.29.786-.54 1.188-.781m7.063 1.875c2.187-.047 4.824.293 7.468 1.562c.121.082.262.133.407.156c.32.508.609 1.032.843 1.594c-3.113-1.394-6-1.664-8.281-1.5a15 15 0 0 0-4.063.844A15 15 0 0 1 13 9.156c.195-.058.375-.125.625-.187c.75-.188 1.734-.387 2.906-.469c.293-.02.594-.023.907-.031M7.344 9.25c.34 3.41 1.59 6.07 2.906 7.969A16.7 16.7 0 0 0 13 20.312a15 15 0 0 1-1.406 1.782a17.7 17.7 0 0 1-2.344-2.907c-1.355-2.097-2.59-4.992-2.469-8.468a1 1 0 0 0-.093-.531c.203-.32.421-.641.656-.938m11.593 3c2.176-.027 4.844.402 7.72 2a.8.8 0 0 0 .187.094c.074.492.148.992.156 1.5c-1.309-.586-3.41-1.29-6.156-1.344a1 1 0 0 0-.594-.063a1 1 0 0 0-.188.063H20a18 18 0 0 0-3.469.469a16 16 0 0 1-1.687-2.094a14 14 0 0 1 4.094-.625zM5.126 14.406c.492 2.309 1.438 4.293 2.438 5.844a18.8 18.8 0 0 0 2.625 3.25c-.489.414-.899.71-1.22.938C6.544 22.418 5 19.39 5 16c0-.54.05-1.074.125-1.594zm16.219 2.125c.785.043 1.508.117 2.156.25c-.023.203-.047.39-.094.657a15 15 0 0 1-.812 2.843c-.86 2.168-2.422 4.676-5.344 6.407a1 1 0 0 0-.25.25A11 11 0 0 1 16 27c-.477 0-.945-.035-1.406-.094a16.74 16.74 0 0 0 5.469-6.468c.574-1.2.917-2.29 1.125-3.157c.07-.297.113-.515.156-.75zm-2.157.032c.043-.004.086.003.125 0c-.019.093-.039.148-.062.25a14 14 0 0 1-1 2.75c-1.008 2.105-2.781 4.585-6 6.468a1 1 0 0 0-.281.188c-.45-.18-.864-.39-1.281-.625c.324-.25.718-.57 1.124-.938a1 1 0 0 0 1.031-1a16.8 16.8 0 0 0 2.188-2.906a1 1 0 0 0 .188-.344c.566-1 1.066-2.144 1.469-3.437a16 16 0 0 1 2.5-.407zm6.25.78c.594.216 1.051.427 1.375.595a11 11 0 0 1-4.78 7.25a15.6 15.6 0 0 0 2.437-4.157c.488-1.23.75-2.351.906-3.218c.035-.192.04-.31.063-.47z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <defs>
+                                        <mask id="ipTClothesHoodie0">
+                                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                <path d="M37 22v15m-26 0v7h26v-7m-26 0H4V22c0-3 2-6.5 5-9s7-3 7-3l8 8M11 37V22m26 15h7V22c0-3-2-6.5-5-9s-7-3-7-3l-8 8m0 0v9" />
+                                                <path fill="#555" d="M9 13c3-2.5 7-3 7-3l8 8l8-8s4 .5 7 3l2-4.5L39 4H9L7 8.5z" />
+                                            </g>
+                                        </mask>
+                                    </defs>
+                                    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTClothesHoodie0)" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M4.5 18a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m14 0a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5m1.5-1c0-1.37.09-3.19-.5-4.05c-.95-2.05-3.68-2.39-5.59-2.9C13 10 12 9 11.82 8H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V6H9a.49.49 0 0 1-.5-.5c0-.28.21-.5.5-.5h2.5V2H3v15zm-8.5 1a2.5 2.5 0 0 0 0 5a2.5 2.5 0 0 0 0-5" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="17.973" r="2.904" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.317 41.778L24 31.108l4.683 10.67M24 31.108v-6.75m8.581-8.893L24 24.36l-8.581-8.894m-2.574-1.91h22.368M36.71 8.7v9.713M11.423 8.7v9.713M38.198 8.7v9.713m1.487-7.538v5.362M9.936 8.7v9.713M8.45 10.875v5.362" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                    <path fill="currentColor" d="M16 3C8.855 3 3 8.855 3 16s5.855 13 13 13s13-5.855 13-13S23.145 3 16 3m0 2c2.355 0 4.55.758 6.344 2.031a19.3 19.3 0 0 0-5.938-.5c-1.304.094-2.43.29-3.281.5c-.273.067-.45.125-.656.188a9.4 9.4 0 0 1-.156-1.563A10.9 10.9 0 0 1 16 5m-5.625 1.594a14 14 0 0 0 .344 1.906c-.004.2.05.395.156.563a16.6 16.6 0 0 0 1.625 3.843q.03.047.063.094a18.2 18.2 0 0 0 2.343 3.156c-.254.864-.566 1.66-.906 2.375c-.578-.527-1.309-1.304-2.094-2.437c-1.328-1.914-2.594-4.672-2.656-8.375a1 1 0 0 0-.063-.344c.368-.29.786-.54 1.188-.781m7.063 1.875c2.187-.047 4.824.293 7.468 1.562c.121.082.262.133.407.156c.32.508.609 1.032.843 1.594c-3.113-1.394-6-1.664-8.281-1.5a15 15 0 0 0-4.063.844A15 15 0 0 1 13 9.156c.195-.058.375-.125.625-.187c.75-.188 1.734-.387 2.906-.469c.293-.02.594-.023.907-.031M7.344 9.25c.34 3.41 1.59 6.07 2.906 7.969A16.7 16.7 0 0 0 13 20.312a15 15 0 0 1-1.406 1.782a17.7 17.7 0 0 1-2.344-2.907c-1.355-2.097-2.59-4.992-2.469-8.468a1 1 0 0 0-.093-.531c.203-.32.421-.641.656-.938m11.593 3c2.176-.027 4.844.402 7.72 2a.8.8 0 0 0 .187.094c.074.492.148.992.156 1.5c-1.309-.586-3.41-1.29-6.156-1.344a1 1 0 0 0-.594-.063a1 1 0 0 0-.188.063H20a18 18 0 0 0-3.469.469a16 16 0 0 1-1.687-2.094a14 14 0 0 1 4.094-.625zM5.126 14.406c.492 2.309 1.438 4.293 2.438 5.844a18.8 18.8 0 0 0 2.625 3.25c-.489.414-.899.71-1.22.938C6.544 22.418 5 19.39 5 16c0-.54.05-1.074.125-1.594zm16.219 2.125c.785.043 1.508.117 2.156.25c-.023.203-.047.39-.094.657a15 15 0 0 1-.812 2.843c-.86 2.168-2.422 4.676-5.344 6.407a1 1 0 0 0-.25.25A11 11 0 0 1 16 27c-.477 0-.945-.035-1.406-.094a16.74 16.74 0 0 0 5.469-6.468c.574-1.2.917-2.29 1.125-3.157c.07-.297.113-.515.156-.75zm-2.157.032c.043-.004.086.003.125 0c-.019.093-.039.148-.062.25a14 14 0 0 1-1 2.75c-1.008 2.105-2.781 4.585-6 6.468a1 1 0 0 0-.281.188c-.45-.18-.864-.39-1.281-.625c.324-.25.718-.57 1.124-.938a1 1 0 0 0 1.031-1a16.8 16.8 0 0 0 2.188-2.906a1 1 0 0 0 .188-.344c.566-1 1.066-2.144 1.469-3.437a16 16 0 0 1 2.5-.407zm6.25.78c.594.216 1.051.427 1.375.595a11 11 0 0 1-4.78 7.25a15.6 15.6 0 0 0 2.437-4.157c.488-1.23.75-2.351.906-3.218c.035-.192.04-.31.063-.47z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <defs>
+                                        <mask id="ipTClothesHoodie0">
+                                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                                <path d="M37 22v15m-26 0v7h26v-7m-26 0H4V22c0-3 2-6.5 5-9s7-3 7-3l8 8M11 37V22m26 15h7V22c0-3-2-6.5-5-9s-7-3-7-3l-8 8m0 0v9" />
+                                                <path fill="#555" d="M9 13c3-2.5 7-3 7-3l8 8l8-8s4 .5 7 3l2-4.5L39 4H9L7 8.5z" />
+                                            </g>
+                                        </mask>
+                                    </defs>
+                                    <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTClothesHoodie0)" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        <!-- </div> -->
+
+        <!-- <div class="Page Last"> -->
+        <!-- -------------------------------------------- More -------------------------------------------- -->
+            <!-- <section class="section ClassMore" id="More">
+
+                <div class="container">
+                </div>
+
+            </section> -->
+
+        <!-- -------------------------------------------- Footer -------------------------------------------- -->
+            <section class="section ClassFooter" id="Footer">
+                <hr>
+                <div class="container">
+                    <!-- <div class="header-text"> -->
+                    <div class="footer-text">
+                        <p>Contacts & Socials</p>
+                        <!-- <h1>Contacts & Socials</h1> -->
+                    </div>
+                    
+                    <div class="row">
+                        <div id="Footer-Col-1">
+                            <ul>
+                                <li>
+                                    <!-- <img src="assets/images/LinkIn.png" class="icon">
+                                    <div class="LinkText">Personal Email: <a href='https://www.linkedin.com/in/anthony-akinola-b77a3b242/' target="_blank" title="https://www.linkedin.com/in/anthony-akinola-b77a3b242/">anthonyakin02@hotmail.com</a></div> -->
+                                    <a class="icon" href="mailto:anthonyak02interns@outlook.com" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+                                        </svg>
+                                    </a>
+                                    <div class="info">Personal:</div> <a class="LinkText" href="mailto:anthonyak02interns@outlook.com" target="_blank" title="mailto:anthonyak02interns@outlook.com">anthonyak02interns@outlook.com</a>
+                                </li>
+
+                                <li>
+                                    <a class="icon" href="mailto:aa6520@ic.ac.uk" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+                                        </svg>
+                                    </a>
+                                    <div class="info">University:</div> <a class="LinkText" href="mailto:aa6520@ic.ac.uk" target="_blank" title="mailto:aa6520@ic.ac.uk">aa6520@ic.ac.uk</a>
+                                </li>
+        
+                                <li>
+                                    <a class="icon" href="https://www.linkedin.com/in/anthony-akinola-b77a3b242/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <g fill="currentColor">
+                                                <path d="M7.8 6.35c.56 0 1.01-.45 1.01-1.01S8.36 4.33 7.8 4.33s-1.01.45-1.01 1.01s.45 1.01 1.01 1.01" />
+                                                <path fill-rule="evenodd" d="M9.83 8.55c0-1.08-.91-1.86-2.03-1.86s-2.03.78-2.03 1.86v.51c0 .09.04.18.1.24s.15.1.24.1h3.38c.09 0 .18-.04.24-.1s.1-.15.1-.24zM5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001z" clip-rule="evenodd" />
+                                                <path fill-rule="evenodd" d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1" clip-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a class="LinkText" href='https://www.linkedin.com/in/anthony-akinola-b77a3b242/' target="_blank" title="https://www.linkedin.com/in/anthony-akinola-b77a3b242/">CV</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="Footer-Col-2">
+                            <ul>
+                                <li>
+                                    <a class="icon" href="https://www.linkedin.com/in/anthony-akinola-b77a3b242/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                                        </svg>
+                                    </a>
+                                    <a class="LinkText" href='https://www.linkedin.com/in/anthony-akinola-b77a3b242/' target="_blank" title="https://www.linkedin.com/in/anthony-akinola-b77a3b242/">LinkedIn</a>
+                                </li>
+        
+                                <li>
+                                    <a class="icon" href="https://github.com/AnthonyAkin" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/>
+                                        </svg>
+                                    </a>
+                                    <a class="LinkText" href="https://github.com/AnthonyAkin" target="_blank" title="https://github.com/AnthonyAkin">GitHub</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        
+        <!-- -------------------------------------------- About -------------------------------------------- -->
+        
+
+        <!-- <section class="section Projects" id="Projects">
+        </section> -->
+
+
+        <script src="assets/java/java.js"></script>
+        <script src="assets/java/about.js"></script>
+    </body>
+
+</html>
